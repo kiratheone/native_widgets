@@ -14,7 +14,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_sticky_header: ^0.4.0
-  uuid: ^2.0.4
+  uuid: ^3.0.1
   intl: ^0.16.1
   flutter_list_drag_and_drop: ^0.1.6
   flutter_slidable: ^0.5.4
