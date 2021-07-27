@@ -9,8 +9,8 @@ class NativeDatePicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext context) {},
-      android: (BuildContext context) {},
+      cupertino: (BuildContext context, _ ) {},
+      material: (BuildContext context, _ ) {},
     );
   }
 }

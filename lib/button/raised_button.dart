@@ -32,8 +32,8 @@ class NativeButton extends StatelessWidget {
       color: color,
       disabledColor: disabledColor,
       onPressed: onPressed,
-      ios: (BuildContext context) => ios,
-      android: (BuildContext context) => android,
+      cupertino: (BuildContext context, _ ) => ios,
+      material: (BuildContext context, _ ) => android,
     );
   }
 }

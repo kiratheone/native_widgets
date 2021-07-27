@@ -38,7 +38,7 @@ class NativeSearchAppBar extends StatelessWidget
         title: title,
         backgroundColor: backgroundColor,
         leading: leading,
-        android: (BuildContext context) => MaterialAppBarData(
+        material: (BuildContext context, _ ) => MaterialAppBarData(
                 title: MaterialSearchBar(
                   search: search,
                   onSearchChanged: onChanged,
@@ -46,11 +46,11 @@ class NativeSearchAppBar extends StatelessWidget
                 actions: <Widget>[
                   PlatformIconButton(
                     icon: const Icon(Icons.search),
-                    iosIcon: const Icon(CupertinoIcons.search),
+                    cupertinoIcon: const Icon(CupertinoIcons.search),
                     onPressed: onSearchPressed,
                   ),
                 ]),
-        ios: (BuildContext context) => CupertinoNavigationBarData(
+        cupertino: (BuildContext context, _ ) => CupertinoNavigationBarData(
               title: CupertinoSearchWidget(
                 initialValue: search,
                 onChanged: onChanged,
@@ -74,8 +74,8 @@ class NativeSearchAppBar extends StatelessWidget
           onPressed: onSearchPressed,
         ),
       ]..addAll(actions ?? []),
-      ios: (BuildContext context) => ios,
-      android: (BuildContext context) => android,
+      cupertino: (BuildContext context, _ ) => ios,
+      material: (BuildContext context, _ ) => android,
     );
   }
 }

@@ -32,9 +32,9 @@ class CupertinoPhoneListTile extends StatelessWidget {
               child: icon != null && !hideLeadingIcon
                   ? Align(
                       alignment: Alignment.center,
-                      child: icon?.iosIcon != null
+                      child: icon?.cupertinoIcon != null
                           ? Icon(
-                              icon.iosIcon,
+                              icon.cupertinoIcon,
                               color: CupertinoColors.inactiveGray,
                               size: 18.0,
                             )
@@ -75,9 +75,9 @@ class CupertinoPhoneListTile extends StatelessWidget {
               child: icon != null && !hideLeadingIcon
                   ? Align(
                       alignment: Alignment.topCenter,
-                      child: icon?.iosIcon != null
+                      child: icon?.cupertinoIcon != null
                           ? Icon(
-                              icon.iosIcon,
+                              icon.cupertinoIcon,
                               color: CupertinoColors.inactiveGray,
                               size: 18.0,
                             )

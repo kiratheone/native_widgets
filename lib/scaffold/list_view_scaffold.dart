@@ -90,7 +90,7 @@ class NativeListViewScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PlatformWidget(
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         return CupertinoTableViewController(
           leading: leading,
           trailing: trailing,
@@ -113,7 +113,7 @@ class NativeListViewScaffold extends StatelessWidget {
               .toList(),
         );
       },
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         return Container();
       },
     );

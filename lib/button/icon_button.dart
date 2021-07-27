@@ -1,7 +1,7 @@
 part of native_widgets;
 
 class NativeIconButton extends StatelessWidget {
-  final Icon icon, iosIcon;
+  final Icon icon, cupertinoIcon;
   final Key widgetKey;
   final VoidCallback onPressed;
   final EdgeInsets padding;
@@ -10,7 +10,7 @@ class NativeIconButton extends StatelessWidget {
   NativeIconButton({
     Key key,
     @required this.icon,
-    this.iosIcon,
+    this.cupertinoIcon,
     this.onPressed,
     this.widgetKey,
     this.padding,
@@ -24,8 +24,8 @@ class NativeIconButton extends StatelessWidget {
       key: key,
       widgetKey: widgetKey,
       icon: icon,
-      iosIcon: iosIcon,
-      androidIcon: icon,
+      cupertinoIcon: cupertinoIcon,
+      materialIcon: icon,
       onPressed: onPressed,
       color: color,
     );

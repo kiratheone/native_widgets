@@ -15,7 +15,7 @@ class NativeTabScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         return CupertinoTabScaffold(
           tabBar: CupertinoTabBar(items: tabs),
           tabBuilder: (BuildContext context, int index) {
@@ -29,7 +29,7 @@ class NativeTabScaffold extends StatelessWidget {
           },
         );
       },
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         return _BottomTabs(
           tabs: tabs,
           pages: pages,
@@ -53,7 +53,7 @@ class NativeTabView extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         return CupertinoTabView(
           builder: (BuildContext context) {
             return child;
@@ -61,7 +61,7 @@ class NativeTabView extends StatelessWidget {
           defaultTitle: title,
         );
       },
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         return Scaffold(
           appBar: AppBar(
             title: Text(title),

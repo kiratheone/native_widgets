@@ -16,14 +16,14 @@ class NativeGroupSelect<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         return CupertinoSegmentedControl<T>(
           children: children,
           onValueChanged: onValueChanged,
           groupValue: groupValue,
         );
       },
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         return Column(
             children: children.entries
                 .map((MapEntry<T, Widget> item) => RadioListTile<T>(

@@ -96,7 +96,7 @@ class Page3State extends State<Page3> with SingleTickerProviderStateMixin {
       hideAppBarOnSearch: true,
       trailing: NativeIconButton(
         icon: Icon(Icons.add),
-        iosIcon: Icon(
+        cupertinoIcon: Icon(
           CupertinoIcons.add,
           color: CupertinoColors.activeBlue,
           size: 30.0,
@@ -247,7 +247,7 @@ class Page3State extends State<Page3> with SingleTickerProviderStateMixin {
         ),
         leading: NativeIcon(
           Icons.phone,
-          iosIcon: CupertinoIcons.phone_solid,
+          cupertinoIcon: CupertinoIcons.phone_solid,
         ),
         title: Text(item[0]),
         subtitle: Text(item[1]),

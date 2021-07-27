@@ -20,7 +20,7 @@ class NativeText extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         switch (type) {
           case NativeTextTheme.title:
             return Text(
@@ -53,7 +53,7 @@ class NativeText extends StatelessWidget {
           style: style,
         );
       },
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         switch (type) {
           case NativeTextTheme.title:
             return Text(

@@ -39,7 +39,7 @@ class NativeTextInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PlatformWidget(
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         return CupertinoTextField(
           controller: controller,
           placeholder: decoration?.labelText ?? "",
@@ -63,7 +63,7 @@ class NativeTextInput extends StatelessWidget {
           onEditingComplete: onEditingComplete,
         );
       },
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         return ListTile(
           leading: leading,
           trailing: trailing,

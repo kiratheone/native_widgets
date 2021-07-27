@@ -20,7 +20,7 @@ class NativeTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         if (onPressed == null) {
           return Text(
             label,
@@ -38,7 +38,7 @@ class NativeTextButton extends StatelessWidget {
           ),
         );
       },
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         return InkWell(
           onTap: onPressed,
           child: Text(label,

@@ -115,7 +115,7 @@ class Page2State extends State<Page2> with SingleTickerProviderStateMixin {
                       // ),
                       leading: NativeIcon(
                         Icons.phone,
-                        iosIcon: CupertinoIcons.phone_solid,
+                        cupertinoIcon: CupertinoIcons.phone_solid,
                       ),
 
                       title: Text(_name),
@@ -124,7 +124,7 @@ class Page2State extends State<Page2> with SingleTickerProviderStateMixin {
                         NativeText(_date, type: NativeTextTheme.detail),
                         // NativeIconButton(
                         //   icon: Icon(Icons.info),
-                        //   iosIcon: Icon(CupertinoIcons.info),
+                        //   cupertinoIcon: Icon(CupertinoIcons.info),
                         //   onPressed: () {},
                         // ),
                       ],
@@ -171,7 +171,7 @@ class Page2State extends State<Page2> with SingleTickerProviderStateMixin {
 //        // actions: <Widget>[
 //        //   NativeIconButton(
 //        //     icon: Icon(Icons.info_outline),
-//        //     iosIcon: Icon(CupertinoIcons.info),
+//        //     cupertinoIcon: Icon(CupertinoIcons.info),
 //        //   ),
 //        // ],
 //        ios: CupertinoNavigationBarData(
@@ -200,7 +200,7 @@ class Page2State extends State<Page2> with SingleTickerProviderStateMixin {
 //            // ),
 //            leading: NativeIcon(
 //              Icons.phone,
-//              iosIcon: CupertinoIcons.phone_solid,
+//              cupertinoIcon: CupertinoIcons.phone_solid,
 //            ),
 //
 //            title: Text(_name),
@@ -209,7 +209,7 @@ class Page2State extends State<Page2> with SingleTickerProviderStateMixin {
 //              NativeText(_date, type: NativeTextTheme.detail),
 //              // NativeIconButton(
 //              //   icon: Icon(Icons.info),
-//              //   iosIcon: Icon(CupertinoIcons.info),
+//              //   cupertinoIcon: Icon(CupertinoIcons.info),
 //              //   onPressed: () {},
 //              // ),
 //            ],

@@ -42,7 +42,7 @@ class NativeDialog<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
         key: key,
-        ios: (BuildContext context) {
+        cupertino: (BuildContext context, _ ) {
           if (ios?.showActionSheet ?? false || actions.length > 3) {
             NativeDialogAction _toRemove;
             for (NativeDialogAction item in actions) {
@@ -84,7 +84,7 @@ class NativeDialog<T> extends StatelessWidget {
                       ))
                   .toList());
         },
-        android: (BuildContext context) {
+        material: (BuildContext context, _ ) {
           // actions.add(cancelAction);
           return AlertDialog(
               title: title,

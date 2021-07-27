@@ -32,7 +32,7 @@ class NativeListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PlatformWidget(
-      android: (BuildContext context) {
+      material: (BuildContext context, _ ) {
         return ListTile(
           onTap: onTap,
           onLongPress: onLongPressed,
@@ -47,7 +47,7 @@ class NativeListTile extends StatelessWidget {
               : null,
         );
       },
-      ios: (BuildContext context) {
+      cupertino: (BuildContext context, _ ) {
         Widget _child = Container();
 
         switch (ios?.style) {

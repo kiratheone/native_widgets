@@ -2,16 +2,16 @@ part of native_widgets;
 
 class NativeIcon extends StatelessWidget {
   final IconData iconData;
-  final IconData iosIcon;
+  final IconData cupertinoIcon;
 
-  NativeIcon(this.iconData, {Key key, this.iosIcon});
+  NativeIcon(this.iconData, {Key key, this.cupertinoIcon});
 
   @override
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext contesxt) => Icon(iosIcon ?? iconData),
-      android: (BuildContext contesxt) => Icon(iconData),
+      material : (_,__) => Icon(cupertinoIcon ?? iconData),
+      cupertino: (_,__) => Icon(iconData),
     );
   }
 }
